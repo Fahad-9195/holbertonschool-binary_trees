@@ -29,7 +29,8 @@ static size_t depth_leftmost(const binary_tree_t *tree)
  *
  * Return: 1 if perfect, else 0
  */
-static int is_perfect_rec(const binary_tree_t *tree, size_t depth, size_t level)
+static int is_perfect_rec(const binary_tree_t *tree,
+			  size_t depth, size_t level)
 {
 	if (tree == NULL)
 		return (1);
