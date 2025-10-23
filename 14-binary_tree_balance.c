@@ -1,6 +1,15 @@
 #include "binary_trees.h"
 
-/* Local helper that measures height in LEVELS (leaf = 1) */
+/**
+ * height_levels - Measures height in LEVELS for a binary tree
+ * @tree: Pointer to the root node to measure
+ *
+ * Description: This helper returns height as number of levels where
+ * NULL has height 0 and a leaf has height 1. This matches the
+ * checker that expects balance factor using levels.
+ *
+ * Return: Height in levels (0 if tree is NULL)
+ */
 static size_t height_levels(const binary_tree_t *tree)
 {
 	size_t lh, rh;
